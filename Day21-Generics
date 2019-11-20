@@ -1,0 +1,26 @@
+Problem:
+
+Objective
+Today we're discussing Generics; be aware that not all languages support this construct, so fewer languages are enabled for this challenge.
+Check out the Tutorial tab for learning materials and an instructional video!
+
+Task
+Write a single generic function named printArray; this function must take an array of generic elements as a parameter
+(the exception to this is C++, which takes a vector). The locked Solution class in your editor tests your function.
+
+Note: You must use generics to solve this challenge. Do not write overloaded functions.
+
+
+
+    /**
+    *    Method Name: printArray
+    *    Print each element of the generic array on a new line. Do not return anything.
+    *    @param A generic array
+    **/
+    
+    // Write your code here
+    public void printArray(T [] array) {
+        for (int i=0; i<array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
