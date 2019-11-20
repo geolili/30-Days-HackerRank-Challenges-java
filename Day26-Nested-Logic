@@ -1,0 +1,72 @@
+Problem:
+
+Objective
+Today's challenge puts your understanding of nested conditional statements to the test. You already have the knowledge to complete this challenge, but check out the Tutorial tab for a video on testing!
+
+Task
+Your local library needs your help! Given the expected and actual return dates for a library book, create a program that calculates the fine (if any). The fee structure is as follows:
+
+If the book is returned on or before the expected return date, no fine will be charged (i.e.: fine=0).
+If the book is returned after the expected return day but still within the same calendar month and year as the expected return date,
+fine = 15 Hackos x (the number of days late).
+If the book is returned after the expected return month but still within the same calendar year as the expected return date,
+the = 500 Hakos x (the number of months late).
+If the book is returned after the calendar year in which it was expected, there is a fixed fine of 10000 Hackos.
+
+Solution:
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void toPay(String date1, String date2) throws ParseException{
+        int fine = 0;
+        DateFormat format = new SimpleDateFormat("dd MM yyyy");
+        Date effectiveDate = format.parse(date1);
+        int day1 = effectiveDate.getDate();
+        int month1= effectiveDate.getMonth();
+        int year1 = effectiveDate.getYear();
+        Date expectedDate = format.parse(date2);
+        int day2 = expectedDate.getDate();
+        int month2= expectedDate.getMonth();
+        int year2 = expectedDate.getYear();
+        if (year1 == year2 && month1 == month2) {
+            fine = (day1-day2)*15;
+        }
+        else if (year1== year2 && month1>month2){
+            fine = (month1-month2)*500;
+            }
+        else if (year1>year2){
+            fine = 10000;
+        }
+        else {
+            fine = 0;
+        }
+        System.out.println(fine);
+    }
+
+    
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int t = 2;
+        String date1="";
+        String date2="";
+        for(int i=1; i<t; i++) {
+            date1 = sc.nextLine();
+            date2 = sc.nextLine();
+        }
+        try {
+            Solution.toPay(date1, date2);
+        } catch (ParseException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        sc.close();
+    }
+}
+
+
