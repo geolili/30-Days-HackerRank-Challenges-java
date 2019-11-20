@@ -12,3 +12,4 @@ my codes to achieve all 30 days HackerRank challenges in java during november 20
   <li> Day 4: Class vs. Instance</li>
   <li> Day 5: Loops </li>
   <li> Day 6: Let's Review</li>
+  <li> Day 7: Arrays </li>
