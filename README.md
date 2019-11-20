@@ -10,3 +10,4 @@ my codes to achieve all 30 days HackerRank challenges in java
   <li> Day 2: Operators</li>
   <li> Day 3: Intro to Conditional Statements </li>
   <li> Day 4: Class vs. Instance</li>
+  <li> Day 5: Loops </li>
