@@ -8,3 +8,4 @@ my codes to achieve all 30 days HackerRank challenges in java
   <li> Day 0: Hello, World</li>
   <li> Day 1: Data Types</li>
   <li> Day 2: Operators</li>
+  <li> Day 3: Intro to Conditional Statements </li>
