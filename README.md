@@ -28,6 +28,6 @@ my codes to achieve all 30 days HackerRank challenges in java during november 20
   <li> Day 21: Generics </li>
   <li> Day 22: Binary Search Trees </li>
   <li> Day 23: BST Level-Order Traversal </li>
-
+  <li> Day 24: More Linked Lists </li>
 
   </ol>
