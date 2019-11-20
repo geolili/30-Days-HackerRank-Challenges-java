@@ -17,3 +17,4 @@ my codes to achieve all 30 days HackerRank challenges in java during november 20
   <li> Day 9: Recursion 3</li>
   <li> Day 10: Binary Numbers </li>
   <li> Day 11: 2D Arrays</li>
+  <li> Day 12: Inheritance </li>
