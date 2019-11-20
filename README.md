@@ -1,4 +1,4 @@
-# 30-Days-HackerRank-Challenges-java
+# 30 Days HackerRank Challenges in java
 my codes to achieve all 30 days HackerRank challenges in java during november 2019
 
 *work in progress*
