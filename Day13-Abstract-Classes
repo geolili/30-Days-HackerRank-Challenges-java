@@ -1,0 +1,64 @@
+Problem:
+
+Objective
+Today, we're taking what we learned yesterday about Inheritance and extending it to Abstract Classes.
+Because this is a very specific Object-Oriented concept, submissions are limited to the few languages that use this construct.
+Check out the Tutorial tab for learning materials and an instructional video!
+
+Task
+Given a Book class and a Solution class, write a MyBook class that does the following:
+
+Inherits from Book
+Has a parameterized constructor taking these 3 parameters:
+1. string title
+2. string author
+3. int price
+Implements the Book class' abstract display() method so it prints these 3 lines:
+Title:, a space, and then the current instance's title.
+Author:, a space, and then the current instance's author.
+Price:, a space, and then the current instance's price.
+Note: Because these classes are being written in the same file, you must not use an access modifier (e.g.: public)
+when declaring MyBook or your code will not execute.
+
+Solution:
+
+// Declare your class here. Do not use the 'public' access modifier.
+class MyBook extends Book {
+    // Declare the price instance variable
+        private int price;
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+    /**   
+    *   Class Constructor
+    *   
+    *   @param title The book's title.
+    *   @param author The book's author.
+    *   @param price The book's price.
+    **/
+    // Write your constructor here
+        MyBook(String title, String author, int price) {
+        super(title, author);
+        setPrice(price);
+    }
+    /**   
+    *   Method Name: display
+    *   
+    *   Print the title, author, and price in the specified format.
+    **/
+    // Write your method here
+        @Override
+    void display() {
+        // TODO Auto-generated method stub
+        System.out.println("Title: " + this.title);
+        System.out.println("Author: " + this.author);
+        System.out.println("Price: " + this.price);
+    }
+}
+// End class
+
