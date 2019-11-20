@@ -1,0 +1,51 @@
+Problem:
+
+Objective
+Today, we're working with binary numbers. Check out the Tutorial tab for learning materials and an instructional video!
+
+Task
+Given a base-10 integer, n , convert it to binary (base-2). 
+Then find and print the base-10 integer denoting the maximum number of consecutive 1's in n's binary representation.
+
+Solution:
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+    
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int n = scanner.nextInt();
+        int count=0;
+        int consecutives =0;
+        while(n>0)
+            {
+            
+            if(n%2==1)
+                {
+                
+                count++; 
+                  if(count>=consecutives)
+                   {
+                     consecutives=count;
+                   }
+                }
+            else
+                {
+                 count=0;
+                 }
+            
+        n=n/2;
+        }
+        scanner.close();
+        System.out.println(consecutives);
+    }
+}
+
