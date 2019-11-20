@@ -25,4 +25,5 @@ my codes to achieve all 30 days HackerRank challenges in java during november 20
   <li> Day 18: Queues and Stacks </li>
   <li> Day 19: Interfaces </li>
   <li> Day 20: Sorting </li>
+  <li> Day 21: Generics </li>
   </ol>
