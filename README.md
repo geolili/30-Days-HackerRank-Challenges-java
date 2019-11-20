@@ -20,3 +20,4 @@ my codes to achieve all 30 days HackerRank challenges in java during november 20
   <li> Day 12: Inheritance </li>
   <li> Day 14: Scope </li>
   <li> Day 15: Linked List</li>
+  <li> Day 16: Exceptions - String to Integer </li>
