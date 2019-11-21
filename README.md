@@ -33,6 +33,6 @@ my codes to achieve all 30 days HackerRank challenges in java during november 20
   <li> Day 25: Running Time and Complexity </li>
   <li> Day 26: Nested Logic </li>
   <li> Day 27: Testing </li>
-  <li> Day 28: to do </li>
+  <li> Day 28: RegEx, Patterns, and Intro to Databases</li>
   <li> Day 29: to do </li>
   </ol>
