@@ -1,0 +1,44 @@
+Problem:
+
+Objective
+Today, we're working with regular expressions. Check out the Tutorial tab for learning materials and an instructional video!
+
+Task
+Consider a database table, Emails, which has the attributes First Name and Email ID. Given N rows of data simulating the Emails table,
+print an alphabetically-ordered list of people whose email address ends in @gmail.com.
+
+Solution:
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int N = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+        ArrayList<String> arr = new ArrayList<String>();
+        for (int NItr = 0; NItr < N; NItr++) {
+            String[] firstNameEmailID = scanner.nextLine().split(" ");
+
+            String firstName = firstNameEmailID[0];
+
+            String emailID = firstNameEmailID[1];
+            if (emailID.contains("@gmail.com")) {
+                arr.add(firstName);
+            }
+            Collections.sort(arr);
+        }
+        for (int i = 0; i < arr.size(); i++) {
+            System.out.println(arr.get(i));
+        }
+        scanner.close();
+    }
+}
