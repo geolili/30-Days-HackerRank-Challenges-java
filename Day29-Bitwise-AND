@@ -35,7 +35,7 @@ public class Solution {
                     if (bitN > max && bitN < k) {
                         max = bitN;
                     }
-                }
+                } 
             }
             System.out.println(max);
         }
